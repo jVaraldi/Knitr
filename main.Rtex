@@ -1,0 +1,27 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+\usepackage{comment}
+%Basic chunk example
+%-------------------------------------------------------------------------------------
+\begin{document}
+You can type R commands in your \LaTeX{} document and they will be properly run and the output printed in the document.
+
+<<chunk1>>=
+# Create a sequence of numbers
+X = 2:10
+
+# Display basic statistical measures
+summary(X)
+hist(rnorm(100))
+@
+%--------------------------------------------------------------------------------
+
+So, the mean of the data is $\Sexpr{mean(X)}$ %Inline command
+
+
+
+%--------------------------------------------------------------------------------
+
+\end{document}
